@@ -1,0 +1,60 @@
+/*reseteo del css: reseteo los estilos del navegador cuando pongo un asterisco, anulo todos los efectos que tiene por default*/
+/*
+*{
+margin: 0;
+padding: 0;
+}
+a partir de ahora tengo todo el control de los margenes y padding que este escribiendo*/
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px; /*16 es el default*/
+}
+/*llamo a la clase:*/
+
+.header{
+background: rgb(214, 184, 214);
+color: white;
+height: 80px;
+margin-bottom: 10px;
+margin-left: auto; /*el navegador va a calcular mas o menos cuanto le va a dar seugn las otras medidas y propiedades que le paso a ese elemento*/
+margin-right: auto;
+}
+.logo{
+    text-transform: uppercase; /*todas en mayuscula*/
+
+}
+
+/*otra forma de dar estilos*/
+.logo a{
+/*apunto a las a que son hijos de la clase logo, por eso se llama hojas en cascada porque puedo ir bajando por la jerarquia aplicando estilos*/
+    color: white;
+    text-decoration: none;
+}
+.navbar{
+    background: rgb(13,6,117);
+    color: white;
+    width: 85vw; 
+    /* view w... altura, toma el 85% de la pantalla*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar ul{ /*hijos ul de la clase navbar*/
+    list-style: none; /*sacar los puntitos negros items*/
+    text-align: center;
+}
+.navbar ul li{
+    display: inline-block;
+}
+.navbar ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    color: white;
+    }
+
+.navbar ul li a:hover{
+background: white;
+color: rgb(13,6,117);
+}
+
