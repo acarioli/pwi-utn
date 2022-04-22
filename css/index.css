@@ -58,3 +58,119 @@ background: white;
 color: rgb(13,6,117);
 }
 
+.banner-top{
+    padding: 20px;
+    display: flex; /*forma de acomodar rapidamente nuestras etiqeutas como querramos ubicarlas para no estar manteniendo tantos px. Forma de acomodar rapida*/
+    justify-content: center;
+    }
+
+#contenedor{
+    width: 90%; /*Ancho*/
+    margin: 0, auto;
+    display: flex; /*el contenedor padre debe tener el display flex, si se lo pongo a un article no todos tendran el mismo tamaño*/
+    justify-content: space-around; /*espacio alrededor entre cada uno de los elementos*/
+        }
+.body{
+    background-color: rgb(233, 228, 227);
+    }
+#contenedor img{
+    width: 100%;
+}
+.primero{
+    padding: 2%;
+    }
+.segundo{
+   padding: 2%;
+    }
+.tercero{
+    padding: 2%;
+    }
+.footer{
+    margin-top: 25px;
+    background-color: rgb(183, 144, 187);
+    display: flex;
+    justify-content: space-around;
+}
+.footer ul{
+    list-style: none;
+}
+.data{
+    background-color: rgb(192, 192, 192);
+    color: black;
+    list-style: none;
+
+    }
+.map{
+    width: 60%;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 660px) and (max-width: 989px){
+
+    .body{
+        background: yellow;
+    }
+
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner-top{
+        display: none;
+    }
+
+    .primero{
+        width: 100%;
+    }
+
+    .primero figure{
+        height: 300px;
+        overflow: hidden;
+    }
+
+    .segundo{
+        width: 50%; 
+    }
+
+    .tercero{
+        width: 50%; 
+    }
+
+}
+@media screen and (min-width: 990px) and (max-width: 1900px) /*seria para una notebook aprox,algun desktop, ese 1px para 990 es el que marca cuando se cambia a este dispositivo*/ {
+
+    .body{
+        background: rgb(42, 170, 221);
+        /*se pone el fondo azul cuando llega a esas dimensiones la pantalla*/
+    }
+
+    /*media quieris de Bootstrap*/
+
+//* X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    
+}
+
+//* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    
+}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) { 
+
+}
